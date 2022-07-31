@@ -1,25 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../utils';
 
 const Card = ({ className }) => (
   <div className={className}>
-    <img src="" alt="card here" />
-    <p>description is here</p>
-    <p>description is here</p>
+    <img src="https://picsum.photos/500/500" alt="card here" />
+    <div>
+      <h3>Product name</h3>
+      <p>$15</p>
+    </div>
   </div>
 );
 
 export default styled(Card)`
-  border: 1px solid yellow;
-  width: 300px;
+  max-width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 2em auto;
+  transition: box-shadow 200ms;
+  box-shadow: 0 0 3px 1px var(--shadow);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 8px 2px var(--shadow);
+  }
 
   img {
-    border: 1px solid red;
     display: block;
+    width: 100%;
+  }
+
+  div {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
   }
 
   p {
-    color: ${colors.test};
+    color: blue;
+    font-weight: 600;
   }
 `;

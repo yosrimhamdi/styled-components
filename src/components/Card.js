@@ -1,17 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = () => {
-  return (
-    <Wrapper>
-      <img src="" alt="card here" />
-      <p>description is here</p>
-      <p>description is here</p>
-    </Wrapper>
-  );
-};
+const Card = ({ className }) => (
+  <div className={className}>
+    <img src="" alt="card here" />
+    <p>description is here</p>
+    <p>description is here</p>
+  </div>
+);
 
-const Wrapper = styled.div`
+export default styled(Card)`
   border: 1px solid yellow;
   width: 300px;
 
@@ -24,5 +22,3 @@ const Wrapper = styled.div`
     color: var(--test);
   }
 `;
-
-export default Card;

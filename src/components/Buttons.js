@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Button } from '@material-ui/core';
+import { Button as MUIButton } from '@material-ui/core';
 
-export const DefaultButton = styled.button`
+export const Button = styled.button`
   width: 200px;
   text-align: center;
   background-color: blue;
@@ -12,13 +12,16 @@ export const DefaultButton = styled.button`
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+  text-decoration: none;
 `;
 
-export const FancyButton = styled(DefaultButton)`
+export const FancyButton = styled(Button)`
   background-color: green;
   border: 1px solid yellow;
 `;
 
-export const ChangedMUIButton = styled(Button)`
+export const ChangedMUIButton = styled(MUIButton)`
   text-transform: capitalize !important;
 `;

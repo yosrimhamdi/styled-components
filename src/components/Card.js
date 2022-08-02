@@ -20,8 +20,12 @@ export default styled(Card)`
   box-shadow: 0 0 3px 1px var(--shadow);
   cursor: pointer;
 
+  @media screen and (min-width: 800px) {
+    max-width: 400px;
+  }
+
   &:hover {
-    box-shadow: 0 0 8px 2px var(--shadow);
+    box-shadow: 0 0 10px 2px var(--shadow);
   }
 
   img {

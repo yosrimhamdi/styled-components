@@ -8,6 +8,7 @@ import { Button } from './components/Buttons';
 import Spinner from './components/Spinner';
 import Form from './components/Form';
 import List from './components/List';
+import Products from './components/Products';
 
 const App = () => {
   const [isLight, setIsLight] = useState(true);
@@ -16,6 +17,7 @@ const App = () => {
     <ThemeProvider theme={isLight ? lightTheme : darkTheme}>
       <GlobalStyles />
       <List />
+      <Products />
       <Form />
       <Card />
       <Spinner />

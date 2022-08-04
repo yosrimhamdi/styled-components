@@ -27,6 +27,7 @@ const List = () => {
 
 export default List;
 
-/** If styles on an element will change based on a condition
+/** APPLYING STYLES BASED ON A (1) CONDITION
+ * If styles on an element will change based on a condition
  *  Created a separate styled component and pass props into it.
  */

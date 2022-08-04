@@ -14,12 +14,13 @@ const App = () => {
     <ThemeProvider theme={isLight ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Card />
+      <Spinner />
       <Button onClick={() => setIsLight(!isLight)}>Toggle theme</Button>
-      <Button>One</Button>
+      <Button>Default button</Button>
+      <Button large>Large button</Button>
       <Button as="a" href="https://www.mhamdi.co/" target="_blank">
         This is a link
       </Button>
-      <Spinner />
     </ThemeProvider>
   );
 };

@@ -7,6 +7,7 @@ import { darkTheme, lightTheme } from './themes';
 import { Button } from './components/Buttons';
 import Spinner from './components/Spinner';
 import Form from './components/Form';
+import List from './components/List';
 
 const App = () => {
   const [isLight, setIsLight] = useState(true);
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <ThemeProvider theme={isLight ? lightTheme : darkTheme}>
       <GlobalStyles />
+      <List />
       <Form />
       <Card />
       <Spinner />
